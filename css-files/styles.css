@@ -1,8 +1,32 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Cinzel:wght@500&family=Courgette&family=Kaushan+Script&family=Roboto&display=swap');
+
+:root {
+
+    --header-font:'Cinzel', serif;
+    --answers-font:'Baloo 2', cursive;
+    --standout-font:'Courgette', cursive;
+    --questions-font:'Roboto', sans-serif;
+    --casual-font: 'Kaushan Script', cursive;
+}
+
+#bodi {
+
     background-image: url("../image-files/graduation-four.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-position:inherit;
-    
-
 }   
+
+.questions{
+    font-family:var(--headlet-font) ;
+    font-weight: 500;
+}
+
+.answerSection{
+    background-image: url(../image-files/graduation-two.jpg);
+    font-family: var(--answers-font);
+}
+
+.heading {
+    font-family: var(--header-font);
+}
