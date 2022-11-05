@@ -40,6 +40,7 @@ maliza.addEventListener("click",function(e){
 
     }
     alama.textContent = "You have scored: " + percentage +"%"+level;
+
     //percentage-=percentage; //prevents the submit button from continuing to double on subsequent clicks
     //
 });
@@ -48,7 +49,10 @@ maliza.addEventListener("click",function(e){
 $("#finished").click(function(){
     
     $("#results").removeClass("d-none");
-    $("#finished").text("QUIZ SUBMITTED!");
+    $(this).text("QUIZ SUBMITTED!");
+    $(this).prop("disabled",true);
+    $(this).removeClass("btn-outline-primary");
+    $(this).addClass("bg-primary text-light")
     
     majibu.forEach(function(jibu) {
 
