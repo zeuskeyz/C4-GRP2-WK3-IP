@@ -51,8 +51,7 @@ $("#finished").click(function(){
     $("#results").removeClass("d-none");
     $(this).text("QUIZ SUBMITTED!");
     $(this).prop("disabled",true);
-    $(this).removeClass("btn-outline-primary");
-    $(this).addClass("bg-primary text-light")
+    $(this).addClass("bg-warning text-dark")
     
     majibu.forEach(function(jibu) {
 
