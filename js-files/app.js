@@ -39,7 +39,7 @@ maliza.addEventListener("click",function(e){
         level += "\nPoor performance, Please retake test.";
 
     }
-    alama.textContent = "You have scored: " + percentage +"%"+level;
+    alama.textContent = "You have scored: " + percentage +"%" + level;
 
     //percentage-=percentage; //prevents the submit button from continuing to double score on subsequent clicks
     
@@ -62,3 +62,6 @@ $("#finished").click(function(){
 });
 
 
+$("document").ready(function(){
+    $("label").css("color", "black");
+})

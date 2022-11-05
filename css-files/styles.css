@@ -13,7 +13,7 @@
 
     background-image: url(../image-files/codekidinverted.jpg);
     background-repeat:no-repeat;
-    background-size:100%;
+    background-size:cover;
 }   
 
 .questions{
@@ -34,3 +34,9 @@
     font-size: larger;
 }
 
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+    background-color: #e4a11b66;
+    color: black;
+}
