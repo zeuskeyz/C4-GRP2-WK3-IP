@@ -41,8 +41,8 @@ maliza.addEventListener("click",function(e){
     }
     alama.textContent = "You have scored: " + percentage +"%"+level;
 
-    //percentage-=percentage; //prevents the submit button from continuing to double on subsequent clicks
-    //
+    //percentage-=percentage; //prevents the submit button from continuing to double score on subsequent clicks
+    
 });
 
 
@@ -61,4 +61,5 @@ $("#finished").click(function(){
     });
     
 });
+
 

@@ -11,7 +11,7 @@
 
 #bodi {
 
-    background-image: url("../image-files/graduation-four.jpg");
+    background-image: url(../image-files/graduation-four.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position:inherit;
@@ -29,4 +29,11 @@
 
 .heading {
     font-family: var(--header-font);
+}
+
+.mylink{
+    color:white;
+}
+.mylink:hover{
+    font-size: larger;
 }
