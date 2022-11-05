@@ -11,10 +11,9 @@
 
 #bodi {
 
-    background-image: url(../image-files/graduation-four.jpg);
+    background-image: url(../image-files/codekidinverted.jpg);
     background-repeat:no-repeat;
-    background-size: cover;
-    background-position:inherit;
+    background-size:100%;
 }   
 
 .questions{
@@ -31,9 +30,7 @@
     font-family: var(--header-font);
 }
 
-.mylink{
-    color:white;
-}
 .mylink:hover{
     font-size: larger;
 }
+
