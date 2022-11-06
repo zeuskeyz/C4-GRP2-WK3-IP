@@ -35,7 +35,7 @@ https://zeuskeyz.github.io/C4-GRP2-WK3-IP/
 
 #### Contact information ####
 Reach me through any of the below for feedback or assistance.
-- Email: zeuscodez@gmail.com
+- Email: zeuscodez@gmail.com 
 - Call : +254 (0) 707 3003 07 | +254 (0) 728 8581 50
 
 ###### THE CODEMAN™ 2022 ######
