@@ -4,9 +4,9 @@
 This project aims to build a web application that allows users to take a multiple choice test online and get their results on the site.
 
 #### Author(s) information ####
-Name: Silas Hazroun.
-Title: Software Engineer at Codeman
-Name: Silas Hazroun - Software Engineer at Codeman Softwares.
+- Name: Silas Hazroun.
+- Title: Software Engineer at Codeman
+- Name: Silas Hazroun - Software Engineer at Codeman Softwares.
 
 #### Setup instructions ####
 This app is fairly easy to set and run and no scripts need to be run prior to its use.
