@@ -6,7 +6,6 @@ This project aims to build a web application that allows users to take a multipl
 #### Author(s) information ####
 - Name: Silas Hazroun.
 - Title: Software Engineer at Codeman
-- Name: Silas Hazroun - Software Engineer at Codeman Softwares.
 
 #### Setup instructions ####
 This app is fairly easy to set and run and no scripts need to be run prior to its use.
