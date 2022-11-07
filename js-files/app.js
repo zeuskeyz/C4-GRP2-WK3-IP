@@ -2,6 +2,7 @@ const majibu = document.querySelectorAll("input[type='radio']");
 const maliza = document.querySelector("#finished");
 const matokeo = document.querySelector("#results");
 const alama = document.querySelector("#score");
+const uliko = document.querySelector("#rating")
 
 let marks = 0;
 let totalMarks = 0;
@@ -24,22 +25,23 @@ maliza.addEventListener("click",function(e){
     })    
     
     let percentage = (marks/totalMarks)*100; //turns the marks into percentage form
-    let level = "";
+    let passLevel = "";
 
 
     if (percentage > 80){
-        level += "Excellently Passed";
+        passLevel += "Excellently Passed";
     }
 
     else if(percentage >= 50 && percentage >= 80 ){
-        level += "Fairly Passed";
+        passLevel += "Fairly Passed";
     }
 
     else{
-        level += "\nPoor performance, Please retake test.";
+        passLevel += "Consider retaking test.";
 
     }
-    alama.textContent = "You have scored: " + percentage +"%" + level;
+    alama.textContent = "You have scored: " + percentage +"%";
+    uliko.textContent = passLevel;
 
     //percentage-=percentage; //prevents the submit button from continuing to double score on subsequent clicks
     

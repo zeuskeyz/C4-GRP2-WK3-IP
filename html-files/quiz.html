@@ -340,19 +340,20 @@
         </div>
     </div>
 
-    
-
-    <div class="container text-center my-3">
-        <button type="button" class="btn btn-outline-warning btn-lg fw-bold" id="finished">SUBMIT QUIZ</button>
+    <div class="container d-none" id="results">
+        <div class="card text-center bg-warning border-warning border-5 my-3 me-2">
+            <div class="card-body text-dark">
+              <h6 class="card-title outline-light display-6 congrats">Congratulations on taking the quiz!</h6>
+              <p class="card-text fs-2 mb-0" id="score"></p>
+              <p class="card-text fs-4 mt-0" id="rating"></p>
+              <a href="../index.html" class="card-link btn btn-dark my-1 me-2" role="button">Home</a>
+              <a href="quiz.html" class="card-link btn btn-dark my-1 ms-2" role="button">Retake</a>
+            </div>
+        </div>
     </div>
 
-    <div class="container d-none" id="results">
-        <div class="card text-center bg-warning border-warning border-5 mb-3">
-            <div class="card-body text-dark">
-              <h5 class="card-title outline-light">Congratulations on taking the quiz</h5>
-              <p class="card-text" id="score"></p>
-            </div>
-          </div>
+    <div class="container text-center my-3">
+        <button type="button" class="btn btn-outline-warning btn-lg fw-bold mt-2" id="finished">SUBMIT QUIZ</button>
     </div>
 
     <nav class="navbar navbar-expand-lg bg-warning navbar-light mt-5 mb-0 justify-content-start align-items-baseline">

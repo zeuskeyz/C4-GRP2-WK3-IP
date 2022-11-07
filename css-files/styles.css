@@ -21,17 +21,22 @@
     font-weight: 500;
 }
 
-.answerSection{
-    background-image: url(../image-files/graduation-two.jpg);
+.answerSection,#rating, #score{
     font-family: var(--answers-font);
 }
-
+.answerSection{
+    background-image: url(../image-files/graduation-two.jpg);
+}
 .heading {
     font-family: var(--header-font);
 }
 
 .mylink:hover{
     font-size: larger;
+}
+
+.congrats {
+    font-family: var(--questions-font);
 }
 
 .accordion-button:focus {
