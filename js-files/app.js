@@ -56,15 +56,16 @@ $("document").ready(function(){
     
         $("#results").removeClass("d-none");
         $(this).text("QUIZ SUBMITTED!");
-        $(this).prop("disabled",true);
+        $(this).addClass("d-none");
         $("#repeat").removeClass("d-none");
+        $(".answers").attr("disabled",true);
 
         attempts--;
         if(attempts>=1) {
             $("#counter").text("You still have "+attempts+" attempts left.");
         }
         else{
-            $("#rating").text("You have exhausted your 3 attempts!")
+            $("#rating").text("You have exhausted your 3 attempts!");
             $("#counter").text("");
             $("#repeat").addClass("d-none");
         }
@@ -77,7 +78,7 @@ $("document").ready(function(){
         if (attempts >= 1){
 
             $(this).addClass("d-none");
-            $("#finished").prop("disabled",false);
+            $("#finished").removeClass("d-none");
             $("#finished").text("SUBMIT QUIZ");
             $(".answers").attr("disabled",false);
             $(".answers").prop("checked",false);
