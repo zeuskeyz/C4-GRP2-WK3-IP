@@ -3,7 +3,9 @@ const maliza = document.querySelector("#finished");
 const matokeo = document.querySelector("#results");
 const alama = document.querySelector("#score");
 const uliko = document.querySelector("#rating")
+const rudia = document.querySelector("#repeat")
 
+let attempts = 3;
 let marks = 0;
 let totalMarks = 0;
 
@@ -32,7 +34,7 @@ maliza.addEventListener("click",function(e){
         passLevel += "Excellently Passed";
     }
 
-    else if(percentage >= 50 && percentage >= 80 ){
+    else if(percentage >= 50 && percentage < 80 ){
         passLevel += "Fairly Passed";
     }
 
@@ -43,27 +45,50 @@ maliza.addEventListener("click",function(e){
     alama.textContent = "You have scored: " + percentage +"%";
     uliko.textContent = passLevel;
 
-    //percentage-=percentage; //prevents the submit button from continuing to double score on subsequent clicks
-    
+    //percentage-=percentage; //prevents the submit button from continuing to double score on subsequent clicks in case we opt not todisable the submit button  
 });
 
-
-$("#finished").click(function(){
-    
-    $("#results").removeClass("d-none");
-    $(this).text("QUIZ SUBMITTED!");
-    $(this).prop("disabled",true);
-    $(this).addClass("bg-warning text-dark")
-    
-    majibu.forEach(function(jibu) {
-
-        $("input[type='radio']").attr("disabled",true)
- 
-    });
-    
-});
 
 
 $("document").ready(function(){
+    
+    $("#finished").click(function() {
+    
+        $("#results").removeClass("d-none");
+        $(this).text("QUIZ SUBMITTED!");
+        $(this).prop("disabled",true);
+        $("#repeat").removeClass("d-none");
+
+        attempts--;
+        if(attempts>=1) {
+            $("#counter").text("You still have "+attempts+" attempts left.");
+        }
+        else{
+            $("#rating").text("You have exhausted your 3 attempts!")
+            $("#counter").text("");
+            $("#repeat").addClass("d-none");
+        }
+
+        
+    });
+
+    $("#repeat").click(function(){
+
+        if (attempts >= 1){
+
+            $(this).addClass("d-none");
+            $("#finished").prop("disabled",false);
+            $("#finished").text("SUBMIT QUIZ");
+            $(".answers").attr("disabled",false);
+            $(".answers").prop("checked",false);
+            $("#results").addClass("d-none");
+
+        }
+
+
+    });
+
+
+
     $("label").css("color", "black");
 })

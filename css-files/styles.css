@@ -35,7 +35,7 @@
     font-size: larger;
 }
 
-.congrats {
+.congrats, .card-link{
     font-family: var(--questions-font);
 }
 
