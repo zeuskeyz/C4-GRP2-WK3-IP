@@ -45,7 +45,7 @@ maliza.addEventListener("click",function(e){
     alama.textContent = "You have scored: " + percentage +"%";
     uliko.textContent = passLevel;
 
-    percentage-=percentage; //co  
+    percentage-=percentage; //prevents the submit button from continuing to double score on subsequent clicks in case we opt not todisable the submit button
 });
 
 
