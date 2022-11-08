@@ -40,12 +40,11 @@ maliza.addEventListener("click",function(e){
 
     else{
         passLevel += "Consider retaking test.";
-
     }
+
     alama.textContent = "You have scored: " + percentage +"%";
     uliko.textContent = passLevel;
-
-    percentage-=percentage; //prevents the submit button from continuing to double score on subsequent clicks in case we opt not todisable the submit button
+    marks = 0; //prevents the submit button from continuing to double score on subsequent clicks in case we opt not todisable the submit button
 });
 
 
@@ -61,6 +60,7 @@ $("document").ready(function(){
         $(".answers").attr("disabled",true);
 
         attempts--;
+
         if(attempts>=1) {
             $("#counter").text("You still have "+attempts+" attempts left.");
         }
